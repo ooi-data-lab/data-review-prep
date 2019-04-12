@@ -21,7 +21,9 @@ db_stream_desc = db_stream_desc.rename(columns={'name': 'stream_name'})
 db_stream_desc = db_stream_desc[['stream_name', 'stream_type']]
 db = pd.merge(db_inst_stream, db_stream_desc, on='stream_name', how='outer')
 db = db[db.reference_designator.notnull()]
-db = db[db.stream_type == 'Science']  # filter on science streams only
+#db = db[db.stream_type == 'Science']  # filter on science streams only
+# get science streams and the glider streams that contain m_water_depth
+db = db.loc[(db['stream_type'] == 'Science') | (db['stream_name'] == 'glider_eng_telemetered') | (db['stream_name'] == 'glider_eng_recovered')]
 db = db[['reference_designator', 'method', 'stream_name']]
 
 # Create a dataframe of just unique reference designators from the data team database
