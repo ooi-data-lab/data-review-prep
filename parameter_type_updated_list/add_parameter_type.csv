@@ -146,3 +146,5 @@ parameter_id,parameter_name,Type,add_parameter_type
 8050,sci_bb3slo_b660_units,,Science Data
 3721,fdchp_a_fluxmom_alongwind,,Science Data
 3722,fdchp_a_fluxmom_crosswind,,Science Data
+3349,uw_momentum_flux,,Science Data
+3350,vw_momentum_flux,,Science Data
