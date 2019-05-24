@@ -144,3 +144,5 @@ parameter_id,parameter_name,Type,add_parameter_type
 3463,sensor_temperature,,Science Data
 8044,sci_bb3slo_b470_units,,Science Data
 8050,sci_bb3slo_b660_units,,Science Data
+3721,fdchp_a_fluxmom_alongwind,,Science Data
+3722,fdchp_a_fluxmom_crosswind,,Science Data
